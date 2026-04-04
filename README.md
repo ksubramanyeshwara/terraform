@@ -20,6 +20,7 @@ This repository documents my learning journey of Terraform. It will have notes, 
 ## 🗂️ Repository Structure
 
 [Fundamentals](./01-fundamentals/README.md)
+[Configuration](./02-configuration/README.md)
 
 ## 📫 Connect With Me
 

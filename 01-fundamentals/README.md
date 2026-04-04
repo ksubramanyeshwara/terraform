@@ -66,6 +66,7 @@ terraform --version
 2. Initialize the Terraform
 3. Plan the changes
 4. Apply the changes
+5. Destroy 
 
 ## AWS Configure
 
