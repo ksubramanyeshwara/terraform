@@ -13,6 +13,14 @@ provider "aws" {
 
 - This tells terraform: I want to create/manage AWS resource in us-east-1
 
+> Provider will have `terraform{}` block which tells Terraform about which providers are needed and the version of the provider.
+
+- Ensures Correct Provider Version
+- Makes Project Reproducible
+
+> required_version = It defines terraform cli version
+> required_version = "~>1.2". In this only last part will be upgraded not the others
+
 ### Types of Providers
 
 1. Official: Maintained by Hashicorp
@@ -160,3 +168,15 @@ locals {
     instance_type = var.env == "prod" ? "t3.large" : "t2.micro"
 }
 ```
+
+> When you are running `terraform plan` add `-out=pla..tfplan`.
+
+- It will save the plan and you can use the same plan in `terraform apply plan.tfplan`
+- Now Terraform will execute exactly what was planned, no surprises.
+
+### When should you use this?
+
+- You want predictability
+- In CI/CD pipelines
+- In team environments
+- For production changes
