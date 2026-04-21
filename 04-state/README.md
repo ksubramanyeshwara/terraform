@@ -41,6 +41,6 @@
    - `terraform apply`
 
 4. Terraform:
-   - Locks state (via DynamoDB) 🔒
+   - Locks state (via DynamoDB)
    - Applies changes
    - Updates state in S3
