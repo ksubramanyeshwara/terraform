@@ -3,9 +3,9 @@ resource "aws_instance" "rmt-backend-instance" {
     ami = "ami-05d2d839d4f73aafb"
 }
 
-# resource "aws_s3_bucket" "tf-backend" {
-#     bucket = "ks-demo-tf-backend"
-# }
+resource "aws_s3_bucket" "tf-backend" {
+    bucket = "ks-demo-tf-backend"
+}
 
 # Dynamodb configuration for state locking
 resource "aws_dynamodb_table" "tf-state-lock" {
